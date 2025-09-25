@@ -1,5 +1,5 @@
 # ---- Builder: build Jekyll site ----
-FROM jekyll/jekyll:4.3 AS builder
+FROM jekyll/jekyll:4 AS builder
 
 WORKDIR /srv/jekyll
 COPY Gemfile Gemfile.lock* ./
