@@ -4,6 +4,12 @@
   region: Vancouver, BC
   bg: "#ffffff"
 
+- name: Foothills Movers (Calgary & Area)
+  url: https://foothillsmovers.ca
+  logo: /assets/logos/foothills-movers.svg
+  region: Calgary & Area, AB
+  bg: "#0f1f34"
+
 - name: Vancouver’s Movers
   url: https://vancouversmovers.com
   logo: /assets/logos/vancouvers-movers.svg
@@ -14,10 +20,4 @@
   url: https://torontopromoving.com
   logo: /assets/logos/toronto-pro-moving.svg
   region: Toronto & GTA, ON
-  bg: "#0f1f34"
-
-- name: Foothills Movers (Calgary & Area)
-  url: https://foothillsmovers.ca
-  logo: /assets/logos/foothills-movers.svg
-  region: Calgary & Area, AB
   bg: "#0f1f34"
