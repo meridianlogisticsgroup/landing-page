@@ -1,0 +1,10 @@
+---
+# Front matter required for Jekyll to process SCSS
+# Output to /assets/css/main.css as requested
+permalink: /assets/css/main.css
+---
+
+@import "variables";
+@import "mixins";
+@import "components";
+@import "utilities";

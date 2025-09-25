@@ -1,0 +1,22 @@
+<section id="brands" class="section">
+  <div class="container">
+    <h2 class="section-title">Our Brands</h2>
+    <p class="section-intro">
+      Local brands. One unified operating system.
+    </p>
+    <ul class="brand-grid">
+      {% for brand in site.data.brands %}
+      <li class="brand-card">
+        <a class="brand-link" href="{{ brand.url }}" target="_blank" rel="noopener">
+          <img class="brand-logo" src="{{ brand.logo }}" alt="{{ brand.name }} logo" />
+          <div class="brand-meta">
+            <h3 class="brand-name">{{ brand.name }}</h3>
+            <p class="brand-region">{{ brand.region }}</p>
+            <span class="brand-visit" aria-hidden="true">Visit →</span>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

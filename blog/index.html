@@ -1,0 +1,31 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Blog</h1>
+    <ul class="post-list">
+      {% for post in paginator.posts %}
+      <li class="post-list-item">
+        <a href="{{ post.url | relative_url }}">
+          <h2>{{ post.title }}</h2>
+          <p class="muted">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <nav class="pagination" aria-label="Pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="btn">← Newer</a>
+      {% endif %}
+      <span class="page-count">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="btn">Older →</a>
+      {% endif %}
+    </nav>
+  </div>
+</section>

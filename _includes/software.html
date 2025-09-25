@@ -1,0 +1,33 @@
+<section id="software" class="section section-spotlight">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title">Our Software</h2>
+      <p class="section-intro">
+        A single stack for booking, estimates, dispatch, and profitability—built for moving companies that operate at scale.
+      </p>
+      <ul class="checklist">
+        <li>Per-km pricing via Google Maps API with transparent tolls & fuel assumptions</li>
+        <li>Resource batching (e.g., Medium Move = 15-ft truck + 3 movers)</li>
+        <li>Nearest-dispatch + live truck availability</li>
+        <li>Quotes → Jobs → Invoices in one flow</li>
+        <li>Automated cost/expense/profit tracking</li>
+        <li>Scheduling, utilization reporting, exportable analytics</li>
+      </ul>
+    </div>
+    <div class="code-card" aria-label="Pseudocode snippet showing our booking model">
+<pre><code># Pseudocode – pricing & batching
+distance = gmaps.route_km(pickup, dropoff)
+batch = catalog["medium_move"]  # truck + crew
+base = batch.rate_base + (distance * batch.rate_per_km)
+
+if is_peak_window(date):
+  base *= 1.15  # peak factor
+
+quote = tax.apply(base, region)
+assign_to = dispatch.nearest_available_truck(pickup, date)
+reserve(assign_to, crew=batch.crew, window=date.window)
+</code></pre>
+      <p class="legal-note">Google Maps Platform is a trademark of Google LLC.</p>
+    </div>
+  </div>
+</section>

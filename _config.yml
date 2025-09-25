@@ -1,0 +1,47 @@
+title: "Meridian Logistics Group"
+description: "Moving the industry forward with unified tech and local expertise."
+url: "https://meridianlogisticsgroup.com" # update when deployed
+author: "Meridian Logistics Group"
+timezone: "America/Toronto"
+
+markdown: kramdown
+theme: null
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose.dev.yml
+  - README.md
+  - vendor
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+# SEO / Social
+logo: /assets/images/og-image.png
+social:
+  name: "Meridian Logistics Group"
+  links: []
+
+# Build settings
+sass:
+  style: compressed
