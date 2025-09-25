@@ -1,19 +1,23 @@
 - name: Care Full Moving Vancouver
   url: https://carefullmoving.ca
-  logo_base: /assets/logos/care-full-moving
+  logo: /assets/logos/care-full-moving.svg
   region: Vancouver, BC
+  bg: "#ffffff"
 
 - name: Vancouver’s Movers
   url: https://vancouversmovers.com
-  logo_base: /assets/logos/vancouvers-movers
+  logo: /assets/logos/vancouvers-movers.svg
   region: Greater Vancouver, BC
+  bg: "#0f1f34"
 
 - name: Toronto Pro Moving
   url: https://torontopromoving.com
-  logo_base: /assets/logos/toronto-pro-moving
+  logo: /assets/logos/toronto-pro-moving.svg
   region: Toronto & GTA, ON
+  bg: "#0f1f34"
 
 - name: Foothills Movers (Calgary & Area)
   url: https://foothillsmovers.ca
-  logo_base: /assets/logos/foothills-movers
+  logo: /assets/logos/foothills-movers.svg
   region: Calgary & Area, AB
+  bg: "#0f1f34"
