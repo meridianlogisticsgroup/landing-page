@@ -101,7 +101,7 @@ body {
   /* visual box for the logo area */
   border-radius: $radius-sm;
   /* give it vertical padding so SVGs have space above/below */
-  padding: .75rem 1rem;          // ~12px top/bottom, 16px sides
+  padding: 2.5rem 1rem;          // ~12px top/bottom, 16px sides
   min-height: 96px;              // overall area height (adjust if needed)
   display: grid;
   place-items: center;           // center the image both ways
