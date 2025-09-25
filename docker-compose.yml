@@ -3,5 +3,5 @@ services:
     build: .
     image: meridianlg/site:latest
     ports:
-      - "8080:80"
+      - ":80"
     restart: unless-stopped
