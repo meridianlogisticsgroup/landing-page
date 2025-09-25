@@ -96,7 +96,31 @@ body {
 
 .brand-card { background: $color-card; border-radius: $radius-lg; border: 1px solid rgba(255,255,255,.06); overflow: hidden; }
 .brand-link { display: grid; gap: $space-3; padding: $space-3; text-decoration: none; color: inherit; align-content: start; }
-.brand-logo { width: 100%; height: 72px; object-fit: contain; background: rgba(255,255,255,.02); border-radius: $radius-sm; }
+/* Logo area */
+.brand-logo-wrap {
+  /* visual box for the logo area */
+  border-radius: $radius-sm;
+  /* give it vertical padding so SVGs have space above/below */
+  padding: .75rem 1rem;          // ~12px top/bottom, 16px sides
+  min-height: 96px;              // overall area height (adjust if needed)
+  display: grid;
+  place-items: center;           // center the image both ways
+
+  /* optional subtle surface behind the brand-specific bg, remove if undesired */
+  /* box-shadow: $shadow-sm; */
+}
+
+.brand-logo {
+  display: block;
+  max-height: 72px;              // approx. previous visual height for the logo graphic
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;           // preserves aspect ratio inside the padded area
+  background: transparent;       // background is on the wrapper now
+  border-radius: 0;              // wrapper has the radius
+}
+
 .brand-name { margin: 0 0 .2rem; font-size: 1.05rem; }
 .brand-region { margin: 0; color: $color-muted; font-size: .95rem; }
 .brand-visit { display: inline-block; margin-top: .6rem; color: $color-accent; }

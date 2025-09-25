@@ -8,16 +8,15 @@
       {% for brand in site.data.brands %}
       <li class="brand-card">
         <a class="brand-link" href="{{ brand.url }}" target="_blank" rel="noopener">
-          <img
-            class="brand-logo"
-            src="{{ brand.logo }}"
-            alt="{{ brand.name }} logo"
-            loading="lazy"
-            decoding="async"
-            width="320"
-            height="80"
-            style="background: {{ brand.bg | default: '#0f1f34' }};"
-          />
+          <div class="brand-logo-wrap" style="background: {{ brand.bg | default: '#0f1f34' }};">
+            <img
+              class="brand-logo"
+              src="{{ brand.logo }}"
+              alt="{{ brand.name }} logo"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
           <div class="brand-meta">
             <h3 class="brand-name">{{ brand.name }}</h3>
             <p class="brand-region">{{ brand.region }}</p>
