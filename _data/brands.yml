@@ -1,10 +1,10 @@
-- name: Care Full Moving Vancouver
+- name: Care Full Moving
   url: https://carefullmoving.ca
   logo: /assets/logos/care-full-moving.svg
-  region: Vancouver, BC
+  region: Vancouver, Calgary, Toronto
   bg: "#ffffff"
 
-- name: Foothills Movers (Calgary & Area)
+- name: Foothills Movers
   url: https://foothillsmovers.ca
   logo: /assets/logos/foothills-movers.svg
   region: Calgary & Area, AB
