@@ -20,14 +20,47 @@ body {
 .center-v { align-items: center; }
 .space-between { justify-content: space-between; }
 
+/* --- Header spacing & layout --- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(10, 26, 43, .8); backdrop-filter: blur(6px);
+  background: rgba(10, 26, 43, .8);
+  backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(255,255,255,.06);
 }
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: $space-2;    // ← vertical padding for the bar
+}
+
+@media (min-width: $bp-md) {
+  .header-inner { padding-block: $space-3; } // a bit roomier on md+
+}
+
+/* --- Brand lockup --- */
 .brand { display: inline-flex; gap: .6rem; align-items: center; color: $color-text; text-decoration: none; }
-.brand-mark { width: 28px; height: 28px; }
 .brand-text { font-weight: 700; letter-spacing: .2px; }
+
+/* Optional logo “chip” wrapper — adds background & built-in padding */
+.brand-mark-wrap {
+  display: grid;
+  place-items: center;
+  padding: .25rem .35rem;     // space around the logo
+  border-radius: $radius-sm;
+  background: $color-card;    // will be overridden by inline style if logo_bg set
+  min-height: 32px;           // gives a consistent chip size even with tight SVGs
+  min-width: 32px;
+}
+
+.brand-mark {
+  width: 24px; height: 24px;  // scale as you like
+  object-fit: contain;
+  display: block;
+}
+
+
 
 .nav { list-style: none; display: flex; gap: $space-3; padding: 0; margin: 0; }
 .nav a { color: $color-text; text-decoration: none; padding: .4rem .6rem; border-radius: $radius-sm; }
