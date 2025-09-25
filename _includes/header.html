@@ -1,9 +1,17 @@
 <header class="site-header">
   <div class="container row space-between center-v">
-    <a class="brand" href="/" aria-label="Meridian Logistics Group home">
-      <img src="/assets/images/favicon.svg" alt="" class="brand-mark" />
-      <span class="brand-text">Meridian Logistics Group</span>
-    </a>
+      <a class="brand" href="{{ '/' | relative_url }}">
+        {%- assign has_logo = false -%}
+        {%- if site.logo -%}
+          {%- assign header_logo = site.static_files | where: "path", site.logo | first -%}
+          {%- if header_logo -%}{%- assign has_logo = true -%}{%- endif -%}
+        {%- endif -%}
+
+        {%- if has_logo -%}
+          <img class="brand-mark" src="{{ site.logo }}" alt="{{ site.title }} logo" loading="lazy" decoding="async" />
+        {%- endif -%}
+        <span class="brand-text">{{ site.title }}</span>
+      </a>
     <nav aria-label="Primary">
       <ul class="nav">
         <li><a href="#brands">Our Brands</a></li>
