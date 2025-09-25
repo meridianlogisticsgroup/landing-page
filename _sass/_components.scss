@@ -25,6 +25,16 @@ body {
   background: rgba(10, 26, 43, .8); backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(255,255,255,.06);
 }
+
+.site-header .container {
+  padding-block: $space-2;
+}
+@media (min-width: $bp-md) {
+  .site-header .container { padding-block: $space-3; }
+}
+
+
+
 .brand { display: inline-flex; gap: .6rem; align-items: center; color: $color-text; text-decoration: none; }
 .brand-mark { width: 28px; height: 28px; }
 .brand-text { font-weight: 700; letter-spacing: .2px; }
