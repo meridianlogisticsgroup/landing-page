@@ -1,6 +1,10 @@
 @mixin container {
-  width: min(100% - 2rem, #{$max-w});
-  margin-inline: auto;
+  max-width: $max-w;     // cap width
+  width: 100%;           // take full width up to the cap
+  margin-left: auto;     // center
+  margin-right: auto;
+  padding-left: 1rem;    // side gutters
+  padding-right: 1rem;
 }
 
 @mixin focus-ring {
