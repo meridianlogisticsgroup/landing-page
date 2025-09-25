@@ -34,6 +34,31 @@ body {
 }
 
 
+/* Header vertical centering + metric normalization */
+.site-header .row { align-items: center; }        // defense-in-depth
+.site-header .nav { align-items: center; }        // center the <ul> flex items
+
+/* kill default h3 margins and set a sane line-height */
+.site-header .brand-text { 
+  margin: 0; 
+  line-height: 1.25; 
+}
+
+/* ensure links/buttons align to middle, not text baselines */
+.site-header .nav a,
+.site-header .btn {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.25;          // match the brand text
+  height: auto;               // no fixed heights
+  padding-top: .45rem;        // keep your existing padding feel
+  padding-bottom: .45rem;
+}
+
+
+
+
+
 
 .brand { display: inline-flex; gap: .6rem; align-items: center; color: $color-text; text-decoration: none; }
 .brand-mark { width: 28px; height: 28px; }
