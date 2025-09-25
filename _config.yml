@@ -45,3 +45,4 @@ social:
 # Build settings
 sass:
   style: compressed
+  sass_dir: _sass
