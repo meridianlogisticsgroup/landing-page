@@ -1,0 +1,33 @@
+{%- comment -%}
+Usage:
+  {% include resolve-logo.html base=brand.logo_base alt=brand.name class="brand-logo" width="320" height="80" %}
+Finds the first existing file among these extensions (in order):
+  .png, .jpg, .jpeg, .webp, .avif, .gif, .svg
+If none found, falls back to /assets/logos/default.png (optional).
+{%- endcomment -%}
+
+{%- assign exts = ".png,.jpg,.jpeg,.webp,.avif,.gif,.svg" | split: "," -%}
+{%- assign logo_path = "" -%}
+
+{%- for e in exts -%}
+  {%- assign candidate = include.base | append: e -%}
+  {%- assign match = site.static_files | where: "path", candidate | first -%}
+  {%- if match -%}
+    {%- assign logo_path = candidate -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if logo_path == "" -%}
+  {%- assign logo_path = "/assets/logos/default.png" -%}
+{%- endif -%}
+
+<img
+  src="{{ logo_path }}"
+  alt="{{ include.alt | default: 'Brand logo' }}"
+  class="{{ include.class }}"
+  loading="lazy"
+  decoding="async"
+  width="{{ include.width | default: '320' }}"
+  height="{{ include.height | default: '80' }}"
+/>

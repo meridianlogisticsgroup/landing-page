@@ -8,7 +8,7 @@
       {% for brand in site.data.brands %}
       <li class="brand-card">
         <a class="brand-link" href="{{ brand.url }}" target="_blank" rel="noopener">
-          <img class="brand-logo" src="{{ brand.logo }}" alt="{{ brand.name }} logo" />
+          {% include resolve-logo.html base=brand.logo_base alt=brand.name | append: ' logo' class="brand-logo" width="320" height="80" %}
           <div class="brand-meta">
             <h3 class="brand-name">{{ brand.name }}</h3>
             <p class="brand-region">{{ brand.region }}</p>
