@@ -1,9 +1,9 @@
 @mixin container {
-  max-width: $max-w;     // cap width
-  width: 100%;           // take full width up to the cap
-  margin-left: auto;     // center
+  max-width: $max-w;      // cap width
+  width: 100%;            // fluid until the cap
+  margin-left: auto;      // center
   margin-right: auto;
-  padding-left: 1rem;    // side gutters
+  padding-left: 1rem;     // gutters
   padding-right: 1rem;
 }
 
