@@ -69,4 +69,4 @@ All standardized, no one-off tooling.
 
 Phones shouldn’t be a science project. Twilio handles the carrier layer; Chatwoot keeps the team organized. A UI-configured flow means we can change rules as the business changes—fast.
 
-_ \*Chatwoot and Twilio are trademarks of their respective owners._
+_&ast;Chatwoot and Twilio are trademarks of their respective owners._
