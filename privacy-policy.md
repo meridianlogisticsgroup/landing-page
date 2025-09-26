@@ -4,6 +4,7 @@ title: Privacy Policy
 permalink: /privacy-policy/
 last_modified_at: 2025-09-26
 ---
+<meta charset="utf-8">
 
 # Privacy Policy
 **Effective date:** July 1, 2025
