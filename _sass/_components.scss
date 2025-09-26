@@ -174,12 +174,19 @@ body {
   display:flex;
 }
 .software-gallery .sg-lightbox > img{
-  max-width:min(92vw, 1200px);
-  max-height:92vh;
   width:auto;
   height:auto;
+  max-width:92vw;      /* responsive cap */
+  max-height:92vh;
   border-radius:12px;
   box-shadow:0 12px 40px rgba(0,0,0,.5);
+}
+
+/* Cap at 1200px without using min()/max() mixed units */
+@media (min-width: 1200px){
+  .software-gallery .sg-lightbox > img{
+    max-width:1200px;
+  }
 }
 
 
