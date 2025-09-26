@@ -117,7 +117,7 @@ body {
 .legal-note { color: $color-muted; font-size: .9rem; margin-top: .6rem; }
 
 
-/* --- Software collage (fixed) --- */
+/* --- 2x2 software thumbnails --- */
 .showcase-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -131,88 +131,41 @@ body {
   .showcase-grid { gap: $space-4; }
 }
 
-/* Clickable square thumbnails */
 .showcase-thumb {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;       /* true squares */
+  position: relative;
   border-radius: $radius-md;
   overflow: hidden;
   box-shadow: $shadow-md;
   background: $color-card;
-  outline: none;
 }
 
-.showcase-thumb img {
+/* Prefer squares */
+.showcase-thumb {
+  aspect-ratio: 1 / 1; /* modern browsers */
+}
+
+/* Fallback for older browsers without aspect-ratio */
+.showcase-thumb::before {
+  content: "";
   display: block;
+  padding-top: 100%; /* 1:1 space */
+}
+.showcase-thumb > img,
+.showcase-thumb > picture,
+.showcase-thumb > a > img {
+  position: absolute; /* pairs with the ::before fallback */
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;         /* crop to square */
-  transition: transform .25s ease, filter .25s ease;
-}
-
-.showcase-thumb:focus-visible,
-.showcase-thumb:hover {
-  outline: 2px solid $color-accent;
-  outline-offset: 2px;
-}
-
-.showcase-thumb:hover img {
-  transform: scale(1.02);
-  filter: saturate(1.05);
-}
-
-/* Lightbox: hidden by default so the 4 full images don't show inline */
-.lightbox {
-  display: none;             /* <<< important */
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.7);
-  place-items: center;
-  padding: $space-4;
-  z-index: 70;
-}
-
-.lightbox:target {
-  display: grid;             /* only show when targeted */
-}
-
-.lightbox-figure {
-  margin: 0;
-  max-width: 92vw;
-  max-height: 86vh;
-  border-radius: $radius-lg;
-  overflow: hidden;
-  box-shadow: $shadow-lg;
-  background: $color-surface;
-}
-
-@media (min-width: 1200px) {
-  .lightbox-figure { max-width: 1200px; }  /* avoids min(1200px, 92vw) unit bug */
-}
-
-.lightbox-figure img {
+  object-fit: cover; /* tidy crop */
   display: block;
-  width: 100%;
-  height: auto;
+  transition: transform .2s ease, filter .2s ease;
 }
 
-.lightbox-close {
-  position: fixed;
-  inset: 0;                  /* click backdrop to close */
-}
-
-.lightbox-close::after {
-  content: "×";
-  position: fixed;
-  top: 16px; right: 20px;
-  width: 36px; height: 36px;
-  display: grid; place-items: center;
-  background: rgba(255,255,255,.12);
-  color: #fff;
-  font-size: 24px; line-height: 1;
-  border-radius: 999px;
-  box-shadow: $shadow-sm;
+.showcase-thumb:hover img,
+.showcase-thumb:focus-within img {
+  transform: scale(1.02);
+  filter: saturate(1.04);
 }
 
 
