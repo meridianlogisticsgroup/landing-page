@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terms and Conditions
-permalink: /terms/
+permalink: /terms-and-conditions/
 last_modified_at: 2025-09-26
 ---
 <meta charset="utf-8">
