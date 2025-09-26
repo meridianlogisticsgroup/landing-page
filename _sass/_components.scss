@@ -117,10 +117,10 @@ body {
 .legal-note { color: $color-muted; font-size: .9rem; margin-top: .6rem; }
 
 
-/* --- Software collage (CSS-only lightbox) --- */
+/* --- Software collage (fixed) --- */
 .showcase-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: $space-3;
   margin-top: $space-3;
   list-style: none;
@@ -131,22 +131,23 @@ body {
   .showcase-grid { gap: $space-4; }
 }
 
+/* Clickable square thumbnails */
 .showcase-thumb {
   display: block;
-  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;       /* true squares */
   border-radius: $radius-md;
   overflow: hidden;
   box-shadow: $shadow-md;
   background: $color-card;
-  aspect-ratio: 1 / 1;             // perfect squares
   outline: none;
 }
 
 .showcase-thumb img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;                // crops evenly to square
-  display: block;
+  object-fit: cover;         /* crop to square */
   transition: transform .25s ease, filter .25s ease;
 }
 
@@ -161,28 +162,24 @@ body {
   filter: saturate(1.05);
 }
 
-/* Lightbox via :target */
+/* Lightbox: hidden by default so the 4 full images don't show inline */
 .lightbox {
+  display: none;             /* <<< important */
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.7);
-  display: grid;
   place-items: center;
   padding: $space-4;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .2s ease;
   z-index: 70;
 }
 
 .lightbox:target {
-  opacity: 1;
-  pointer-events: auto;
+  display: grid;             /* only show when targeted */
 }
 
 .lightbox-figure {
   margin: 0;
-  max-width: 92vw;              // default: fit viewport width
+  max-width: 92vw;
   max-height: 86vh;
   border-radius: $radius-lg;
   overflow: hidden;
@@ -190,24 +187,21 @@ body {
   background: $color-surface;
 }
 
-/* cap at 1200px without using CSS min() (avoids Sass unit math) */
 @media (min-width: 1200px) {
-  .lightbox-figure { max-width: 1200px; }
+  .lightbox-figure { max-width: 1200px; }  /* avoids min(1200px, 92vw) unit bug */
 }
 
 .lightbox-figure img {
   display: block;
   width: 100%;
-  height: auto;        // natural aspect; will letterbox if tall
+  height: auto;
 }
 
 .lightbox-close {
   position: fixed;
-  inset: 0;
-  /* clicking anywhere outside the image closes */
+  inset: 0;                  /* click backdrop to close */
 }
 
-/* Optional: ESC-like close button (visible for screen readers) */
 .lightbox-close::after {
   content: "×";
   position: fixed;
@@ -220,6 +214,7 @@ body {
   border-radius: 999px;
   box-shadow: $shadow-sm;
 }
+
 
 
 
