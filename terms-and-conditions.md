@@ -43,7 +43,7 @@ These Terms and Conditions ("Terms") govern moving, storage, packing, and relate
 ## 3) Booking, Deposits, and Payments
 3.1 **Deposit to secure date**. A non-refundable deposit (typically CAD $50–$250, as shown at booking) secures your date and goes toward your final bill.
 
-3.2 **Estimate payment before start**. On service day and **before work begins**, you must pay the **estimate amount** shown on your confirmation (less deposit). Accepted methods may include card, Interac e-Transfer, bank transfer, or Clik2Pay (availability varies by region). If payment is not received, we may delay or refuse service.
+3.2 **Estimate payment before start**. On service day and **before work begins**, you must pay the **estimate amount** shown on your confirmation (less deposit). Accepted methods may include card, Interac e-Transfer, or bank transfer (availability varies by region). If payment is not received, we may delay or refuse service.
 
 3.3 **Reconciliation at completion**. At Job completion, we reconcile based on actual time, distance (km), Materials, accessorial charges, and taxes. If the **actual total is less** than the estimate, we refund the difference. If **greater**, you must pay the balance immediately.
 
@@ -56,7 +56,7 @@ These Terms and Conditions ("Terms") govern moving, storage, packing, and relate
 - Store a token of your card for deposits, estimate payments, reconciliations, additional approved work, damages, tolls/parking tickets attributable to your Job, and agreed fees.
 - Capture additional charges under these Terms (e.g., balance due at completion, add-ons you approve onsite, missed-payment reconciliation).
 
-3.6 **Clik2Pay and bank transfers**. If you pay via Clik2Pay or bank transfer, you authorize verification, fraud checks, and payment confirmations by the payment partner(s). We do not store your full bank credentials.
+3.6 **Interac e-Transfer and bank transfers**. If you pay via Interac e-Transfer or bank transfer, you authorize verification, fraud checks, and payment confirmations by the payment partner(s). We do not store your full bank credentials.
 
 3.7 **Chargebacks and fees**. If you initiate a chargeback contrary to these Terms and we prevail, you are responsible for our reasonable administrative, attorney, and processing fees, plus any interest permitted by law.
 
