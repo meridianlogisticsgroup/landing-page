@@ -86,4 +86,4 @@ We assign owners to the worst two metrics and check back the next week—small, 
 
 Unified doesn’t mean generic. With brand-aware configuration, intent routing, and a few great templates, customers feel cared for and ops stays calm.
 
-_Chatwoot and Twilio are trademarks of their respective owners._
+_&ast;Chatwoot and Twilio are trademarks of their respective owners._

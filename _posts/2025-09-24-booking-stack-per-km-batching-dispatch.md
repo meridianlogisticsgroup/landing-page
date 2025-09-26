@@ -107,4 +107,4 @@ No code, no CSV gymnastics—just an admin that operators can change safely.
 - **Cleaner handoffs**: quotes and jobs share context; fewer “what did we promise?” moments.  
 - **Better margins**: standardized costs surface issues early, not at month-end.
 
-_Chatwoot and Twilio are trademarks of their respective owners._
+_&ast;Chatwoot and Twilio are trademarks of their respective owners._
