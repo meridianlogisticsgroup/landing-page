@@ -1,3 +1,10 @@
+---
+layout: page
+title: Privacy Policy
+permalink: /privacy/
+last_modified_at: 2025-09-26
+---
+
 # Privacy Policy
 **Effective date:** July 1, 2025
 
