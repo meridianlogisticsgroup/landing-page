@@ -3,6 +3,7 @@ description: "Moving the industry forward with unified tech and local expertise.
 url: "https://meridianlogisticsgroup.com" # update when deployed
 author: "Meridian Logistics Group"
 timezone: "America/Toronto"
+encoding: utf-8
 
 markdown: kramdown
 theme: null
