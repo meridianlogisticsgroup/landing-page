@@ -1,33 +1,60 @@
-<section id="software" class="section section-spotlight">
-  <div class="container two-col">
-    <div>
-      <h2 class="section-title">Our Software</h2>
-      <p class="section-intro">
-        A single stack for booking, estimates, dispatch, and profitability—built for moving companies that operate at scale.
-      </p>
-      <ul class="checklist">
-        <li>Per-km pricing via Google Maps API with transparent tolls & fuel assumptions</li>
-        <li>Resource batching (e.g., Medium Move = 15-ft truck + 3 movers)</li>
-        <li>Nearest-dispatch + live truck availability</li>
-        <li>Quotes → Jobs → Invoices in one flow</li>
-        <li>Automated cost/expense/profit tracking</li>
-        <li>Scheduling, utilization reporting, exportable analytics</li>
-      </ul>
-    </div>
-    <div class="code-card" aria-label="Pseudocode snippet showing our booking model">
-<pre><code># Pseudocode – pricing & batching
-distance = gmaps.route_km(pickup, dropoff)
-batch = catalog["medium_move"]  # truck + crew
-base = batch.rate_base + (distance * batch.rate_per_km)
+<section id="software" class="section">
+  <div class="container">
+    <header class="section-head">
+      <h2>Our Software</h2>
+      <p class="muted">Operator UI for pricing, batching, scheduling, and reporting—no custom code required.</p>
+    </header>
 
-if is_peak_window(date):
-  base *= 1.15  # peak factor
+    <!-- Collage grid -->
+    <ul class="showcase-grid" aria-label="Product screenshots">
+      <li>
+        <a class="showcase-thumb" href="#showcase-1">
+          <img src="/assets/images/showcase-1.png" alt="Service planner view" loading="lazy" decoding="async" />
+        </a>
+      </li>
+      <li>
+        <a class="showcase-thumb" href="#showcase-2">
+          <img src="/assets/images/showcase-2.png" alt="Monthly calendar capacity" loading="lazy" decoding="async" />
+        </a>
+      </li>
+      <li>
+        <a class="showcase-thumb" href="#showcase-3">
+          <img src="/assets/images/showcase-3.png" alt="Job list with statuses and totals" loading="lazy" decoding="async" />
+        </a>
+      </li>
+      <li>
+        <a class="showcase-thumb" href="#showcase-4">
+          <img src="/assets/images/showcase-4.png" alt="New contact / quick start view" loading="lazy" decoding="async" />
+        </a>
+      </li>
+    </ul>
 
-quote = tax.apply(base, region)
-assign_to = dispatch.nearest_available_truck(pickup, date)
-reserve(assign_to, crew=batch.crew, window=date.window)
-</code></pre>
-      <p class="legal-note">Google Maps Platform is a trademark of Google LLC.</p>
+    <!-- CSS-only lightboxes (accessible fallback: links still work with keyboard) -->
+    <div class="lightbox" id="showcase-1" role="dialog" aria-modal="true" aria-label="Service planner view">
+      <a class="lightbox-close" href="#software" aria-label="Close"></a>
+      <figure class="lightbox-figure">
+        <img src="/assets/images/showcase-1.png" alt="" />
+      </figure>
     </div>
+    <div class="lightbox" id="showcase-2" role="dialog" aria-modal="true" aria-label="Monthly calendar capacity">
+      <a class="lightbox-close" href="#software" aria-label="Close"></a>
+      <figure class="lightbox-figure">
+        <img src="/assets/images/showcase-2.png" alt="" />
+      </figure>
+    </div>
+    <div class="lightbox" id="showcase-3" role="dialog" aria-modal="true" aria-label="Job list with statuses and totals">
+      <a class="lightbox-close" href="#software" aria-label="Close"></a>
+      <figure class="lightbox-figure">
+        <img src="/assets/images/showcase-3.png" alt="" />
+      </figure>
+    </div>
+    <div class="lightbox" id="showcase-4" role="dialog" aria-modal="true" aria-label="New contact / quick start view">
+      <a class="lightbox-close" href="#software" aria-label="Close"></a>
+      <figure class="lightbox-figure">
+        <img src="/assets/images/showcase-4.png" alt="" />
+      </figure>
+    </div>
+
+    <p class="tiny muted push-top">Google Maps Platform is a trademark of Google LLC.</p>
   </div>
 </section>
