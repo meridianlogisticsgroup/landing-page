@@ -252,7 +252,7 @@ body {
 .post-meta { padding: $space-3; }
 .post-title { margin: 0 0 .4rem; }
 .post-date { margin: 0 0 .6rem; color: $color-muted; font-size: .95rem; }
-.post-cta, .more-link { color: $color-accent; }
+.post-cta, .more-link { color: $color-accent; text-decoration: none;}
 
 .post-list { list-style: none; padding: 0; margin: 0; display: grid; gap: $space-3; }
 .post-list-item { background: $color-card; border-radius: $radius-lg; border: 1px solid rgba(255,255,255,.06); padding: $space-3; }
