@@ -42,7 +42,7 @@ For all Brands listed above and any future brands operated by Meridian, Meridian
 - **Cookies & Similar Tech:** used for session management, security, preferences, and analytics. See **Cookies & Analytics** below.
 
 ### 3) Information from third parties
-- **Payment & Risk Partners (e.g., **Clik2Pay**, **Stripe**, banks, and fraud-screening services):** payment status, fraud/risk signals, bank/payment confirmations, and compliance checks relevant to the transaction.
+- **Payment & Risk Partners (e.g., **Stripe**, **Clik2Pay**, banks, and fraud-screening services):** payment status, fraud/risk signals, bank/payment confirmations, and compliance checks relevant to the transaction.
 - **Maps & Dispatch Tools:** distance/time estimates, routing, and geocoding derived from the addresses you provide.
 - **Subcontractors/Carriers:** job status updates and proof of service when we engage trusted partners to perform or assist with your move.
 
@@ -76,12 +76,12 @@ We use personal information to:
 
 We do **not** sell your personal information. We may share information with:
 - **Our Brands and Affiliates:** to deliver a consistent, high-quality service across regions.
-- **Service Providers:** payment processors (e.g., **Clik2Pay**, **Stripe**), banks, risk/fraud tools, dispatch/routing platforms, cloud hosting, IT/security vendors, CRM, communications (email/SMS), and analytics providers—**bound by contracts** requiring confidentiality, data protection, and use only for our instructions.
+- **Service Providers:** payment processors (e.g., **Stripe**, **Clik2Pay**), banks, risk/fraud tools, dispatch/routing platforms, cloud hosting, IT/security vendors, CRM, communications (email/SMS), and analytics providers—**bound by contracts** requiring confidentiality, data protection, and use only for our instructions.
 - **Subcontractors/Partner Carriers:** vetted moving partners engaged to perform or assist with a job (limited to operational details needed to complete your service) under **contractual confidentiality and data-protection obligations**.
 - **Legal/Compliance:** regulators, law enforcement, courts, or advisors when legally required or to establish, exercise, or defend legal claims.
 - **Business Transactions:** in the event of a merger, acquisition, financing, or sale of assets, subject to appropriate safeguards and continued protection consistent with this Policy.
 
-**Clik2Pay Specificity:** Where you choose bank transfer via Clik2Pay, your bank/account details are collected and processed by **Clik2Pay** (and/or its financial partners). Meridian receives payment confirmations and limited risk/fraud signals but does **not** receive or store your full bank credentials.
+**Clik2Pay Specificity:** Where you choose bank transfer / Interac e-Transfer via Clik2Pay, your bank/account details are collected and processed by **Clik2Pay** (and/or its financial partners). Meridian receives payment confirmations and limited risk/fraud signals but does **not** receive or store your full bank credentials.
 
 ---
 
