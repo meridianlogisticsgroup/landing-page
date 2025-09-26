@@ -8,9 +8,9 @@ last_modified_at: 2025-09-26
 # Privacy Policy
 **Effective date:** July 1, 2025
 
-Meridian Logistics Group Inc. ("**Meridian**,” "**we**,” "**us**,” or "**our**”) operates a portfolio of local and long-distance moving and storage brands. In this Policy, **"Brands”** means any moving, storage, or related logistics services operated by Meridian under distinct trade names (including but not limited to **Care Full Moving**, **Vancouver’s Movers**, **Toronto Pro Moving**, and **Foothills Movers**) that follow Meridian’s unified operating playbook and platform. This Privacy Policy explains how we collect, use, disclose, and safeguard personal information when you interact with Meridian or any of our Brands online or offline.
+Meridian Logistics Group Inc. ("**Meridian**," "**we**," "**us**," or "**our**") operates a portfolio of local and long-distance moving and storage brands. In this Policy, **"Brands"** means any moving, storage, or related logistics services operated by Meridian under distinct trade names (including but not limited to **Care Full Moving**, **Vancouver’s Movers**, **Toronto Pro Moving**, and **Foothills Movers**) that follow Meridian’s unified operating playbook and platform. This Privacy Policy explains how we collect, use, disclose, and safeguard personal information when you interact with Meridian or any of our Brands online or offline.
 
-This Policy is designed to meet requirements under Canada’s **PIPEDA** (Personal Information Protection and Electronic Documents Act) and, where applicable, **Alberta PIPA** and **BC PIPA**. If you are located in **Quebec**, additional rights under **Quebec’s Act respecting the protection of personal information in the private sector (Law 25)** may apply (see "Quebec Notice” below). If you are outside Canada, local law may grant additional rights.
+This Policy is designed to meet requirements under Canada’s **PIPEDA** (Personal Information Protection and Electronic Documents Act) and, where applicable, **Alberta PIPA** and **BC PIPA**. If you are located in **Quebec**, additional rights under **Quebec’s Act respecting the protection of personal information in the private sector (Law 25)** may apply (see "Quebec Notice" below). If you are outside Canada, local law may grant additional rights.
 
 ---
 
@@ -169,7 +169,7 @@ Our websites and communications may contain links to third-party sites. We are n
 
 ## Changes to This Policy
 
-We may update this Policy from time to time. The "Effective date” will indicate the latest version. For **material changes**, we will provide additional notice—such as **posting a banner** on our websites, updating our cookie banner, and/or **emailing** customers where we have contact details and the change materially affects them.
+We may update this Policy from time to time. The "Effective date" will indicate the latest version. For **material changes**, we will provide additional notice—such as **posting a banner** on our websites, updating our cookie banner, and/or **emailing** customers where we have contact details and the change materially affects them.
 
 ---
 
