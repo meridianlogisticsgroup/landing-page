@@ -117,55 +117,49 @@ body {
 .legal-note { color: $color-muted; font-size: .9rem; margin-top: .6rem; }
 
 
-/* --- 2x2 software thumbnails --- */
-.showcase-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: $space-3;
-  margin-top: $space-3;
-  list-style: none;
-  padding: 0;
+/* ==== Software collage (scoped + high-specificity) ==== */
+.software .showcase-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:$space-3;
+  margin-top:$space-3;
+  list-style:none;
+  padding:0;
 }
 
-@media (min-width: $bp-lg) {
-  .showcase-grid { gap: $space-4; }
+@media (min-width:$bp-lg){
+  .software .showcase-grid{ gap:$space-4; }
 }
 
-.showcase-thumb {
-  position: relative;
-  border-radius: $radius-md;
-  overflow: hidden;
-  box-shadow: $shadow-md;
-  background: $color-card;
+.software .showcase-thumb{
+  position:relative;
+  border-radius:$radius-md;
+  overflow:hidden;
+  box-shadow:$shadow-md;
+  background:$color-card;
+  aspect-ratio:1/1; /* modern */
+}
+.software .showcase-thumb::before{
+  content:"";
+  display:block;
+  padding-top:100%; /* fallback */
 }
 
-/* Prefer squares */
-.showcase-thumb {
-  aspect-ratio: 1 / 1; /* modern browsers */
+/* Win against global img rules */
+.software .showcase-thumb > img{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  display:block;
+  transition:transform .2s ease, filter .2s ease;
 }
 
-/* Fallback for older browsers without aspect-ratio */
-.showcase-thumb::before {
-  content: "";
-  display: block;
-  padding-top: 100%; /* 1:1 space */
-}
-.showcase-thumb > img,
-.showcase-thumb > picture,
-.showcase-thumb > a > img {
-  position: absolute; /* pairs with the ::before fallback */
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* tidy crop */
-  display: block;
-  transition: transform .2s ease, filter .2s ease;
-}
-
-.showcase-thumb:hover img,
-.showcase-thumb:focus-within img {
-  transform: scale(1.02);
-  filter: saturate(1.04);
+.software .showcase-thumb:hover > img,
+.software .showcase-thumb:focus-within > img{
+  transform:scale(1.02);
+  filter:saturate(1.04);
 }
 
 
