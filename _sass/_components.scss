@@ -182,12 +182,17 @@ body {
 
 .lightbox-figure {
   margin: 0;
-  max-width: min(1200px, 92vw);
+  max-width: 92vw;              // default: fit viewport width
   max-height: 86vh;
   border-radius: $radius-lg;
   overflow: hidden;
   box-shadow: $shadow-lg;
   background: $color-surface;
+}
+
+/* cap at 1200px without using CSS min() (avoids Sass unit math) */
+@media (min-width: 1200px) {
+  .lightbox-figure { max-width: 1200px; }
 }
 
 .lightbox-figure img {
