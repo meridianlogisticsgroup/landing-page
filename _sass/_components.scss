@@ -117,49 +117,69 @@ body {
 .legal-note { color: $color-muted; font-size: .9rem; margin-top: .6rem; }
 
 
-/* ==== Software collage (scoped + high-specificity) ==== */
-.software .showcase-grid{
+/* ===== Software gallery (scoped) ===== */
+.software-gallery .sg-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:$space-3;
-  margin-top:$space-3;
+  gap:1rem;
   list-style:none;
+  margin:1rem 0 0;
   padding:0;
 }
 
-@media (min-width:$bp-lg){
-  .software .showcase-grid{ gap:$space-4; }
+@media (min-width: 64rem){ /* ~1024px */
+  .software-gallery .sg-grid{ gap:1.25rem; }
 }
 
-.software .showcase-thumb{
-  position:relative;
-  border-radius:$radius-md;
-  overflow:hidden;
-  box-shadow:$shadow-md;
-  background:$color-card;
-  aspect-ratio:1/1; /* modern */
-}
-.software .showcase-thumb::before{
-  content:"";
+/* Thumbs: perfect squares, crop neatly */
+.software-gallery .sg-thumb-link{
   display:block;
-  padding-top:100%; /* fallback */
+  position:relative;
+  border-radius:12px;
+  overflow:hidden;
+  background:#0f1f33;
+  box-shadow:0 6px 24px rgba(0,0,0,.25);
+  aspect-ratio:1/1;                /* modern browsers */
 }
-
-/* Win against global img rules */
-.software .showcase-thumb > img{
+.software-gallery .sg-thumb-link::before{
+  content:""; display:block; padding-top:100%; /* fallback for old browsers */
+}
+.software-gallery .sg-thumb-link > img{
   position:absolute !important;
   inset:0 !important;
   width:100% !important;
   height:100% !important;
   object-fit:cover !important;
   display:block;
-  transition:transform .2s ease, filter .2s ease;
+  transition:transform .18s ease, filter .18s ease;
+}
+.software-gallery .sg-thumb-link:hover img,
+.software-gallery .sg-thumb-link:focus img{
+  transform:scale(1.02);
+  filter:saturate(1.05);
 }
 
-.software .showcase-thumb:hover > img,
-.software .showcase-thumb:focus-within > img{
-  transform:scale(1.02);
-  filter:saturate(1.04);
+/* CSS-only lightbox using :target */
+.software-gallery .sg-lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.88);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+  z-index:9999;
+}
+.software-gallery .sg-lightbox:target{
+  display:flex;
+}
+.software-gallery .sg-lightbox > img{
+  max-width:min(92vw, 1200px);
+  max-height:92vh;
+  width:auto;
+  height:auto;
+  border-radius:12px;
+  box-shadow:0 12px 40px rgba(0,0,0,.5);
 }
 
 

@@ -1,25 +1,49 @@
-<section id="software" class="section">
+<section id="software" class="section software-gallery">
   <div class="container">
     <header class="section-head">
       <h2>Our Software</h2>
-      <p class="muted">Operator UI for pricing, batching, scheduling, and reporting—no custom code required.</p>
+      <p class="muted">
+        Operator UI for pricing, batching, scheduling, and reporting—no custom code required.
+      </p>
     </header>
 
-    <!-- EXACTLY four thumbnails, nothing else -->
-    <ul class="showcase-grid" aria-label="Product screenshots">
-      <li class="showcase-thumb">
-        <img src="/assets/images/showcase-1.png" alt="Service planner view" loading="lazy" decoding="async">
+    <!-- 4 thumbnails -->
+    <ul class="sg-grid" aria-label="Product screenshots">
+      <li>
+        <a href="#sg1" class="sg-thumb-link">
+          <img src="/assets/images/showcase-1.png" alt="Service planner view" loading="lazy" decoding="async">
+        </a>
       </li>
-      <li class="showcase-thumb">
-        <img src="/assets/images/showcase-2.png" alt="Monthly calendar capacity" loading="lazy" decoding="async">
+      <li>
+        <a href="#sg2" class="sg-thumb-link">
+          <img src="/assets/images/showcase-2.png" alt="Monthly calendar capacity" loading="lazy" decoding="async">
+        </a>
       </li>
-      <li class="showcase-thumb">
-        <img src="/assets/images/showcase-3.png" alt="Job list with statuses and totals" loading="lazy" decoding="async">
+      <li>
+        <a href="#sg3" class="sg-thumb-link">
+          <img src="/assets/images/showcase-3.png" alt="Job list with statuses and totals" loading="lazy" decoding="async">
+        </a>
       </li>
-      <li class="showcase-thumb">
-        <img src="/assets/images/showcase-4.png" alt="New contact / quick start view" loading="lazy" decoding="async">
+      <li>
+        <a href="#sg4" class="sg-thumb-link">
+          <img src="/assets/images/showcase-4.png" alt="New contact / quick start view" loading="lazy" decoding="async">
+        </a>
       </li>
     </ul>
+
+    <!-- CSS-only lightbox overlays (open via :target, close by linking back to #software) -->
+    <a id="sg1" class="sg-lightbox" href="#software" aria-label="Close full-size image">
+      <img src="/assets/images/showcase-1.png" alt="">
+    </a>
+    <a id="sg2" class="sg-lightbox" href="#software" aria-label="Close full-size image">
+      <img src="/assets/images/showcase-2.png" alt="">
+    </a>
+    <a id="sg3" class="sg-lightbox" href="#software" aria-label="Close full-size image">
+      <img src="/assets/images/showcase-3.png" alt="">
+    </a>
+    <a id="sg4" class="sg-lightbox" href="#software" aria-label="Close full-size image">
+      <img src="/assets/images/showcase-4.png" alt="">
+    </a>
 
     <p class="tiny muted push-top">Google Maps Platform is a trademark of Google LLC.</p>
   </div>
