@@ -220,3 +220,5 @@ By booking, paying a deposit, or allowing our crew to begin work, you accept the
 - **Card on file** may be charged for authorized balances, add-ons, or permitted fees under these Terms.
 - **Invoices** and **receipts** issued electronically.
 
+## 19) Complaints
+You can submit complaints to support@meridianlogisticsgroup.com or +1 844-334-6736 (Mon–Fri, 9:00–6:00 local time). We acknowledge within 1 business day, assign a case owner, and aim to resolve within 10 business days (complex cases within 30 days, with interim updates every 5 business days). If your complaint involves a payment made via Clik2Pay, we will coordinate with Clik2Pay to investigate and resolve payment issues and keep you informed. If you remain dissatisfied, you may request a written Final Response and pursue the dispute options in Section 13 (including small claims or arbitration, as applicable).
