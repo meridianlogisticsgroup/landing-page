@@ -4,11 +4,8 @@
     <ul class="post-grid">
       {% assign latest = site.posts | slice: 0, 3 %}
       {% for post in latest %}
-      <li class="post-card">
+      <li class="post-card no-thumb">
         <a href="{{ post.url | relative_url }}" class="post-link">
-          {% if post.image %}
-            <img class="post-img" src="{{ post.image }}" alt="{{ post.title }} image"/>
-          {% endif %}
           <div class="post-meta">
             <h3 class="post-title">{{ post.title }}</h3>
             <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>

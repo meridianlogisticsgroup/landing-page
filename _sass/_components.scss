@@ -239,6 +239,14 @@ body {
 .post-grid { list-style: none; display: grid; gap: $space-3; padding: 0; margin: 0; grid-template-columns: 1fr; }
 @media (min-width: $bp-md) { .post-grid { grid-template-columns: repeat(3, 1fr); } }
 .post-card { background: $color-card; border-radius: $radius-lg; border: 1px solid rgba(255,255,255,.06); overflow: hidden; }
+/* Blog teasers: no thumbnail variant */
+.post-card.no-thumb .post-link { display: block; }
+.post-card.no-thumb .post-meta { padding: $space-3; }
+.post-card.no-thumb .post-title { margin-top: 0; }
+
+/* Extra safety: if any img sneaks in this section, hide it */
+#blog .post-img { display: none !important; }
+
 .post-link { display: grid; text-decoration: none; color: inherit; }
 .post-img { width: 100%; height: 160px; object-fit: cover; background: rgba(255,255,255,.04); }
 .post-meta { padding: $space-3; }
