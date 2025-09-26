@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Chatwoot in Practice: Unified Messaging That Lifts SLA and CSAT Across Brands (No Custom Code)"
 date: 2025-09-24
 author: Meridian Logistics Group
@@ -7,6 +7,7 @@ tags: [support, chatwoot, operations, branding, analytics, configuration]
 excerpt: "We run one UI-driven inbox for multiple brands, keep replies fast and on-tone, and use templates, ownership, and analytics to raise service quality—without building software."
 image: /assets/images/posts/chatwoot-practice.jpg
 ---
+<meta charset="utf-8">
 
 ## One operational inbox, many storefronts
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Inside Our Booking & Ops Stack: Per-km Pricing, Smart Batching, and Nearest Dispatch (All UI-Driven)"
 date: 2025-09-24
 author: Meridian Logistics Group
@@ -7,6 +7,7 @@ tags: [operations, pricing, dispatch, billing, configuration]
 excerpt: "How we configure per-km pricing, pre-define truck/crew batches, choose the nearest available unit, and flow quotes into invoices—without writing code."
 image: /assets/images/posts/booking-stack.jpg
 ---
+<meta charset="utf-8">
 
 ## Why a logistics firm needs a configurable UI (not custom code)
 

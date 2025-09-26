@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Voice That Works: Twilio + Chatwoot for Ring-All, First-Answer Routing, and Voicemail Events (UI-Configured)"
 date: 2025-09-24
 author: Meridian Logistics Group
@@ -7,6 +7,7 @@ tags: [voice, telephony, chatwoot, twilio, operations, configuration]
 excerpt: "Our PSTN-first approach is configured in the UI: ring all available agents, assign to the first answer, and drop voicemails/recordings into the inbox—no softphones, no custom code."
 image: /assets/images/posts/twilio-voice.jpg
 ---
+<meta charset="utf-8">
 
 ## Why PSTN first (and UI-configured)
 
